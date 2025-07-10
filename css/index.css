@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.cream {
+    background-color: #f5f5dc; /* Cream color */
+}
+
+.blue {
+    background-color: #e0f7fa; /* Light blue color */
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('../img/bulb-brain.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* dark overlay for readability */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    background-color: #00a8cc;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Playfair Display", sans-serif;
+    background-image: linear-gradient(to right, #007f99 50%, #049cbe 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s;
+}
+
+.hero-button:hover {
+    background-position: left bottom;
+}
+
+/* Core Tenants Section */
+.core-tenants {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    gap: 20px;
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+.tenant {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    overflow: visible;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tenant:nth-child(1) {
+    background-image: url('../img/counseling.svg'); /* Example image */
+}
+
+.tenant:nth-child(1)::before {
+    content: "Scripture";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.75s ease;
+    left: 0;
+    top: 0;
+}
+
+.tenant:nth-child(1):hover::before {
+    left: -20px;
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    content: "Scripture is G-d's word that brings light into our lives and guides us. G-d is a loving shepherd and we are His sheep. We follow His voice."
+}
+
+.tenant:nth-child(2) {
+    background-image: url('../img/counseling.svg'); /* Example image */
+}
+
+.tenant:nth-child(2)::before {
+    content: "Psychology";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+}
+
+.tenant:nth-child(2):hover::before {
+    left: -20px;
+    top: 20px;
+    content: "G-d encourages us to understand ourselves and the world He gave us. So we use science-backed methods in our counseling."
+}
+
+.tenant:nth-child(3) {
+    background-image: url('../img/counseling.svg'); /* Example image */
+}
+
+.tenant:nth-child(3)::before {
+    content: "Integration";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+}
+
+.tenant:nth-child(3):hover::before {
+    left: -20px;
+    top: 20px;
+    content: "Faith is not in a vacuum. We integrate scriptures, psychology, and lived experiences to help form your healing journey.";
+}
+
+/* Section styling */
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
