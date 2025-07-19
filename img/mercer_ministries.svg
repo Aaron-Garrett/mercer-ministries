@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1856.61 678.79">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: FelixTitlingMT, 'Felix Titling';
+        font-size: 233.74px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #f9f3e0;
+        stroke: #f9f3e0;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        letter-spacing: -.14em;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-2" points="579.76 569.34 399.91 .5 291.32 .5 237.02 192.79 166.89 .5 65.09 .5 .61 310.49 80.93 310.49 118.25 123.79 188.38 277.63 296.97 278.76 346.33 115.65 486.95 569.34 579.76 569.34"/>
+  <polyline class="cls-2" points="539.66 442.52 594.46 310.49 690.61 310.49 768.97 621.49 695.56 621.49 638.57 402.05 585.41 569.34 486.95 569.34 432.71 403.18 394.32 619.43 307.15 621.49 361.45 310.49 416.46 310.49"/>
+  <text class="cls-1" transform="translate(499.11 288.46)"><tspan x="0" y="0">e</tspan><tspan class="cls-3" x="126.68" y="0">r</tspan><tspan x="279.5" y="0">cer</tspan></text>
+  <text class="cls-1" transform="translate(775.63 620.28)"><tspan x="0" y="0">inistries</tspan></text>
+</svg>

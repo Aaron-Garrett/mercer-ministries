@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mindmap Example</title>
+<style>
+  body {
+    background: #2C3E50;
+    color: #FAF3E0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .mindmap {
+    position: relative;
+    width: 50%;
+    height: 50%;
+  }
+  .node {
+    position: absolute;
+    padding: 14px 20px;
+    background: #34495E;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #FAF3E0AA;
+    font-weight: 600;
+    text-align: center;
+    z-index: 2;
+    user-select: none;
+    text-wrap: wrap;
+    width: 200px;
+  }
+  .central {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    z-index: 10;
+  }
+  .branch {
+    font-size: 1rem;
+  }
+
+  .top { top: 0%; left: 50%; transform: translateX(-50%); }
+  .top-left { top: 33%; left: 5%; }
+  .top-right { top: 33%; right: 5%; }
+  .bottom-left { bottom: 5%; left: 15%; }
+  .bottom-right { bottom: 5%; right: 15%; }
+
+  svg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+  <div class="mindmap">
+    <div class="node central">About Me</div>
+
+    <div class="node branch top">Born in Belfast</div>
+    <div class="node branch top-left">Began Working at Twelve Stones</div>
+    <div class="node branch top-right">Came to Know Christ as a Teenager</div>
+    <div class="node branch bottom-left">Graduated from Seminary in the USA</div>
+    <div class="node branch bottom-right">Achieved a Master's Degree in Biblical Counseling</div>
+
+    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+      <line x1="50" y1="50" x2="50" y2="0" stroke="#FAF3E0" stroke-width="1" />
+      <line x1="50" y1="53" x2="5" y2="39" stroke="#FAF3E0" stroke-width="1" />
+      <line x1="50" y1="53" x2="95" y2="39" stroke="#FAF3E0" stroke-width="1" />
+      <line x1="50" y1="50" x2="15" y2="92" stroke="#FAF3E0" stroke-width="1" />
+      <line x1="50" y1="50" x2="85" y2="92" stroke="#FAF3E0" stroke-width="1" />
+    </svg>
+  </div>
+</body>
+</html>

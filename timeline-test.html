@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timeline Example</title>
+  <style>
+    body {
+      background: #2C3E50;
+      font-family: Arial, sans-serif;
+      color: #FAF3E0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .timeline {
+      position: relative;
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 1.5rem;
+      border-bottom: 4px solid #FAF3E0;
+      padding-left: 1.5rem;
+    }
+
+    .event {
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+
+    .event:last-child {
+      margin-bottom: 0;
+    }
+
+    .event::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 135%;
+      width: 18px;
+      height: 18px;
+      background: #FAF3E0;
+      border-radius: 50%;
+      border: 4px solid #2C3E50;
+    }
+
+    .event .date {
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+      font-size: 0.95rem;
+    }
+
+    .event .desc {
+      background: #34495E;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #FAF3E0AA;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="timeline" aria-label="Personal Timeline">
+    <div class="event">
+      <div class="date">1990</div>
+      <div class="desc">Born in Belfast, Ireland</div>
+    </div>
+    <div class="event">
+      <div class="date">2010</div>
+      <div class="desc">Found Christ as a teenager</div>
+    </div>
+    <div class="event">
+      <div class="date">2015</div>
+      <div class="desc">Graduated from Seminary in the USA</div>
+    </div>
+    <div class="event">
+      <div class="date">2022</div>
+      <div class="desc">Achieved a Master's in Biblical Counseling</div>
+    </div>
+    <div class="event">
+      <div class="date">2022</div>
+      <div class="desc">Began working at Twelve Stones</div>
+    </div>
+  </div>
+</body>
+
+</html>
