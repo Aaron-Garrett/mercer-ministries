@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 1856.61 678.79">
+  <ns0:defs>
+    <ns0:style>
+      .cls-1 {
+        font-family: FelixTitlingMT, 'Felix Titling';
+        font-size: 233.74px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #f9f3e0;
+        stroke: #f9f3e0;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        letter-spacing: -.14em;
+      }
+    </ns0:style>
+  </ns0:defs>
+  <ns0:polygon class="cls-2" points="580 570 400 0 290 0 235 195 165 0 65 0 0 310 80 310 120 125 190 280 295 280 345 115 485 570 580 570" />
+  <ns0:polyline class="cls-2" points="540 445 595 310 690 310 770 620 695 620 640 400 585 570 485 570 435 405 395 620 305 620 360 310 415 310" />
+  <ns0:text class="cls-1" transform="translate(499.11 288.46)"><ns0:tspan x="0" y="0">e</ns0:tspan><ns0:tspan class="cls-3" x="126.68" y="0">r</ns0:tspan><ns0:tspan x="279.5" y="0">cer</ns0:tspan></ns0:text>
+  <ns0:text class="cls-1" transform="translate(775.63 620.28)"><ns0:tspan x="0" y="0">inistries</ns0:tspan></ns0:text>
+</ns0:svg>
